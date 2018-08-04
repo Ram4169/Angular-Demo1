@@ -1,0 +1,14 @@
+<div *ngIf="Status">
+    The name of this Tutorial is {{TutorialName}}<br>
+    The first Topic is {{appList[0]}}<br>
+    The second Topic is {{appList[1]}}<br>
+    The third Topic is {{appList[2]}}<br>
+ </div>
+ <div> 
+    <button (click) = "clicked()">Click</button> 
+ </div>
+ <div>
+    <input [value] = "name" (input) = "name = $event.target.value">
+    {{name}}
+ </div>
+<div>Product: <a class="button" (click)="onBack()">Back to Inventroy</a></div>
